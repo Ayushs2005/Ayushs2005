@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on **Web Development**
 
-- 🌱 I’m currently learning **C++ & Python**
+- 🌱 I’m currently learning **Java**
 
 - 📫 How to reach me **sharma.0316ayush@gmail.com**
 
