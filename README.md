@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **C++ & Python**
 
-- 📫 How to reach me **sharma.0316@gmail.com**
+- 📫 How to reach me **sharma.0316ayush@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
