@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- HERO ANIMATED VIDEO BANNER (CRISP & ADJUSTED ASPECT RATIO) -->
-<img src="Assets/header-animated.svg" alt="Ayush Sharma — Cloud Engineer | SDET | Test Automation" width="100%" />
+<!-- HERO ANIMATED VIDEO BANNER (100% NATIVELY SUPPORTED GIF COMPOSITE) -->
+<img src="Assets/header-banner.gif" alt="Ayush Sharma — Cloud Engineer | SDET | Test Automation" width="100%" />
 
 <br/>
 
@@ -121,30 +121,9 @@ I work on the parts of distributed systems and quality engineering that make or 
 
 ## 06 // ACTIVITY TRACE &amp; TELEMETRY
 
-<!-- Exact Extracted GitHub Activity Stats -->
+<!-- Unified Full-Width Activity Telemetry & High-Contrast Language Breakdown -->
 <div align="center">
-  <img src="Assets/github-stats-card.svg" alt="GitHub Activity Telemetry @Ayushs2005" width="100%" />
-</div>
-
-<br/>
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="Assets/profile-signal.svg" alt="Profile Signal Assessment A+" width="100%" />
-    </td>
-    <td width="50%" valign="top">
-      <img src="Assets/language-distribution.svg" alt="Language Composition Breakdown" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ayushs2005&show_icons=true&theme=transparent&title_color=d9cbce&text_color=9e8588&icon_color=8b111a&border_color=4a0404&bg_color=080507&hide_border=false" alt="Ayush Sharma GitHub Stats" height="170" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ayushs2005&theme=transparent&stroke=4a0404&background=080507&ring=8b111a&fire=8b111a&currStreakNum=ffffff&sideNums=d9cbce&currStreakLabel=8b111a&sideLabels=9e8588&dates=665053&border_radius=8&hide_border=false" alt="Ayush Sharma Streak Stats" height="170" />
+  <img src="Assets/activity-telemetry-full.svg" alt="Activity Telemetry &amp; Language Composition" width="100%" />
 </div>
 
 <div align="center">

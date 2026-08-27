@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="actFullBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080406" />
+      <stop offset="50%" stop-color="#120508" />
+      <stop offset="100%" stop-color="#060204" />
+    </linearGradient>
+    <linearGradient id="actBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#2b0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      @keyframes actPulse {
+        0%, 100% { fill: #8b111a; opacity: 0.6; }
+        50% { fill: #e62842; opacity: 1; }
+      }
+      .act-dot { animation: actPulse 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="850" height="260" rx="10" fill="url(#actFullBg)" />
+  <rect x="1" y="1" width="848" height="258" rx="9" fill="none" stroke="url(#actBorder)" stroke-width="1.2" />
+
+  <!-- LEFT HALF: GITHUB ACTIVITY & PROFILE SIGNAL -->
+  <g transform="translate(24, 24)">
+    <!-- Header -->
+    <circle cx="4" cy="4" r="4" class="act-dot" />
+    <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.12em">ACTIVITY &amp; PROFILE SIGNAL</text>
+    <text x="385" y="8" fill="#e62842" font-size="10.5" font-weight="700" class="mono" text-anchor="end">@Ayushs2005</text>
+    <line x1="0" y1="20" x2="385" y2="20" stroke="#380a0f" stroke-width="1" />
+
+    <!-- 4 Metrics Cells -->
+    <g transform="translate(0, 32)">
+      <!-- Stars -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">STARS</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">48</text>
+        <text x="68" y="46" fill="#f5a623" font-size="13">★</text>
+      </g>
+
+      <!-- Commits -->
+      <g transform="translate(98, 0)">
+        <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">COMMITS</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">100<tspan font-size="14" fill="#e62842">+</tspan></text>
+        <text x="70" y="46" fill="#e62842" font-size="13">⚡</text>
+      </g>
+
+      <!-- Pull Requests -->
+      <g transform="translate(196, 0)">
+        <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">PULL REQS</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">10<tspan font-size="14" fill="#48c774">+</tspan></text>
+        <text x="70" y="46" fill="#48c774" font-size="13">⇅</text>
+      </g>
+
+      <!-- Repos -->
+      <g transform="translate(294, 0)">
+        <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">REPOSITORIES</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">13</text>
+        <text x="68" y="46" fill="#7a88b8" font-size="13">📦</text>
+      </g>
+    </g>
+
+    <!-- Profile Assessment Banner (A+ Grade) -->
+    <g transform="translate(0, 108)">
+      <rect width="385" height="82" rx="6" fill="#160609" stroke="#660000" stroke-width="1" />
+      <!-- Big A+ Badge -->
+      <g transform="translate(42, 41)">
+        <circle cx="0" cy="0" r="28" fill="#0a0204" stroke="#e62842" stroke-width="1.5" />
+        <text x="-3" y="11" fill="#ffffff" font-size="30" font-weight="900" class="sans" text-anchor="middle">A<tspan font-size="20" fill="#e62842" dx="1" dy="-6">+</tspan></text>
+      </g>
+      <!-- Telemetry text -->
+      <g transform="translate(85, 24)">
+        <text x="0" y="0" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">ENGINEERING PROFILE SIGNAL</text>
+        <text x="0" y="18" fill="#e62842" font-size="10" font-weight="700" class="mono">VERIFIED SDET &amp; CLOUD ARCHITECTURE</text>
+        <text x="0" y="34" fill="#a8898c" font-size="9.5" class="mono">99.4% Test Automation · Cloud Certified (AZ-104)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="425" y1="20" x2="425" y2="240" stroke="#33080c" stroke-width="1.2" stroke-dasharray="4 3" />
+
+  <!-- RIGHT HALF: HIGH CONTRAST LANGUAGE COMPOSITION -->
+  <g transform="translate(445, 24)">
+    <!-- Header -->
+    <circle cx="4" cy="4" r="4" fill="#f5a623" />
+    <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.12em">LANGUAGE COMPOSITION</text>
+    <text x="380" y="8" fill="#8f7c7f" font-size="10" class="mono" text-anchor="end">CODEBASE RATIO</text>
+    <line x1="0" y1="20" x2="380" y2="20" stroke="#380a0f" stroke-width="1" />
+
+    <!-- Language Progress Bars -->
+    <g transform="translate(0, 32)">
+      <!-- 1. Python -->
+      <g transform="translate(0, 0)">
+        <circle cx="4" cy="7" r="3.5" fill="#e62842" />
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Python</text>
+        <text x="380" y="11" fill="#ff7084" font-size="11.5" font-weight="700" class="mono" text-anchor="end">45.0%</text>
+        <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
+        <rect x="0" y="17" width="171" height="7" rx="3.5" fill="#e62842" />
+      </g>
+
+      <!-- 2. JavaScript -->
+      <g transform="translate(0, 32)">
+        <circle cx="4" cy="7" r="3.5" fill="#f5a623" />
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">JavaScript</text>
+        <text x="380" y="11" fill="#ffd580" font-size="11.5" font-weight="700" class="mono" text-anchor="end">25.0%</text>
+        <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
+        <rect x="0" y="17" width="95" height="7" rx="3.5" fill="#f5a623" />
+      </g>
+
+      <!-- 3. Java -->
+      <g transform="translate(0, 64)">
+        <circle cx="4" cy="7" r="3.5" fill="#e06843" />
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Java</text>
+        <text x="380" y="11" fill="#ffaa88" font-size="11.5" font-weight="700" class="mono" text-anchor="end">15.0%</text>
+        <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
+        <rect x="0" y="17" width="57" height="7" rx="3.5" fill="#e06843" />
+      </g>
+
+      <!-- 4. Shell / Bash -->
+      <g transform="translate(0, 96)">
+        <circle cx="4" cy="7" r="3.5" fill="#48c774" />
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Shell / Bash</text>
+        <text x="380" y="11" fill="#a3f0bd" font-size="11.5" font-weight="700" class="mono" text-anchor="end">10.0%</text>
+        <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
+        <rect x="0" y="17" width="38" height="7" rx="3.5" fill="#48c774" />
+      </g>
+
+      <!-- 5. SQL & Others -->
+      <g transform="translate(0, 128)">
+        <circle cx="4" cy="7" r="3.5" fill="#7a88b8" />
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">SQL &amp; Others</text>
+        <text x="380" y="11" fill="#c4cce8" font-size="11.5" font-weight="700" class="mono" text-anchor="end">5.0%</text>
+        <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
+        <rect x="0" y="17" width="19" height="7" rx="3.5" fill="#7a88b8" />
+      </g>
+    </g>
+  </g>
+</svg>
