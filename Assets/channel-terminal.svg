@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 210" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080406" />
+      <stop offset="50%" stop-color="#110508" />
+      <stop offset="100%" stop-color="#050204" />
+    </linearGradient>
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#2b0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      
+      @keyframes pulseSignal {
+        0%, 100% { fill: #8b111a; r: 4; opacity: 0.6; }
+        50% { fill: #c41e2c; r: 5.5; opacity: 1; }
+      }
+      @keyframes waveRadar {
+        0% { r: 4; opacity: 0.8; }
+        100% { r: 16; opacity: 0; }
+      }
+      @keyframes termBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .signal-dot { animation: pulseSignal 2s infinite; }
+      .radar-ring { animation: waveRadar 2s cubic-bezier(0.2, 0.6, 0.4, 1) infinite; }
+      .term-cursor { animation: termBlink 0.8s infinite; fill: #8b111a; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Frame -->
+  <rect width="850" height="210" rx="10" fill="url(#termBg)" />
+  <rect x="1" y="1" width="848" height="208" rx="9" fill="none" stroke="url(#termBorder)" stroke-width="1.2" />
+
+  <!-- Terminal Window Bar -->
+  <g transform="translate(20, 20)">
+    <circle cx="6" cy="6" r="4" fill="#8b111a" />
+    <circle cx="22" cy="6" r="4" fill="#3b0a0f" />
+    <circle cx="38" cy="6" r="4" fill="#240509" />
+    
+    <text x="60" y="10" fill="#a89a9c" font-size="11" font-weight="700" class="mono">TRANSMISSION CHANNEL // DIRECT ACCESS PROTOCOL</text>
+    
+    <!-- Live Signal Radar -->
+    <g transform="translate(730, 6)">
+      <circle cx="0" cy="0" r="4" fill="none" stroke="#8b111a" stroke-width="1.2" class="radar-ring" />
+      <circle cx="0" cy="0" r="4" fill="#8b111a" class="signal-dot" />
+      <text x="14" y="4" fill="#e8dadc" font-size="10" font-weight="700" class="mono">ONLINE</text>
+    </g>
+    
+    <line x1="0" y1="20" x2="810" y2="20" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Terminal Body Content -->
+  <g transform="translate(24, 66)">
+    <!-- Line 1 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="12" fill="#8b111a" font-size="12" font-weight="700" class="mono">&gt;</text>
+      <text x="18" y="12" fill="#8f7c7f" font-size="12" class="mono">target_identity :</text>
+      <text x="160" y="12" fill="#ffffff" font-size="12" font-weight="700" class="mono">Ayush Sharma <tspan fill="#a8898c" font-weight="500">(SDET-1 @ Infinite Locus // Cloud Architect)</tspan></text>
+    </g>
+
+    <!-- Line 2 -->
+    <g transform="translate(0, 26)">
+      <text x="0" y="12" fill="#8b111a" font-size="12" font-weight="700" class="mono">&gt;</text>
+      <text x="18" y="12" fill="#8f7c7f" font-size="12" class="mono">specialization  :</text>
+      <text x="160" y="12" fill="#d9cbce" font-size="12" class="mono">Playwright Automation · Serverless Telemetry · Distributed Data Integrity</text>
+    </g>
+
+    <!-- Line 3 -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="12" fill="#8b111a" font-size="12" font-weight="700" class="mono">&gt;</text>
+      <text x="18" y="12" fill="#8f7c7f" font-size="12" class="mono">github_uri      :</text>
+      <text x="160" y="12" fill="#8b111a" font-size="12" font-weight="700" class="mono">https://github.com/Ayushs2005<tspan class="term-cursor">_</tspan></text>
+    </g>
+
+    <!-- Quick Action Cards Row -->
+    <g transform="translate(0, 84)">
+      <!-- GitHub Button Tile -->
+      <a href="https://github.com/Ayushs2005" target="_blank">
+        <g transform="translate(0, 0)">
+          <rect width="180" height="34" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+          <text x="90" y="21" fill="#ffffff" font-size="11" font-weight="700" class="mono" text-anchor="middle">⚡ GITHUB // @Ayushs2005</text>
+        </g>
+      </a>
+
+      <!-- LinkedIn Button Tile -->
+      <a href="https://linkedin.com" target="_blank">
+        <g transform="translate(195, 0)">
+          <rect width="180" height="34" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+          <text x="90" y="21" fill="#ffffff" font-size="11" font-weight="700" class="mono" text-anchor="middle">🔗 LINKEDIN // CONNECT</text>
+        </g>
+      </a>
+
+      <!-- Status Ping Tile -->
+      <g transform="translate(390, 0)">
+        <rect width="410" height="34" rx="6" fill="#1b0407" stroke="#660000" stroke-width="1" />
+        <text x="205" y="21" fill="#d4b2b6" font-size="11" font-weight="600" class="mono" text-anchor="middle">STATUS: READY FOR COLLABORATION &amp; INITIATIVES</text>
+      </g>
+    </g>
+  </g>
+</svg>

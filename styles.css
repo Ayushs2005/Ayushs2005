@@ -1,0 +1,352 @@
+:root {
+  --bg-primary: #070709;
+  --bg-card: #0d0608;
+  --blood-red-deep: #4a0404;
+  --blood-red-crimson: #8b111a;
+  --oxblood: #2b0204;
+  --text-main: #f0ecec;
+  --text-muted: #9e8588;
+  --text-sub: #665053;
+  --border-subtle: #240508;
+  --border-accent: #4a0404;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#ambientCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.profile-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 40px auto 80px auto;
+  padding: 0 20px;
+}
+
+/* Header Banner (290px Height, Full Cover Video, Zero Empty Space, Top-Left Aligned Head, Right-Shifted Text) */
+.header-banner-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.5px solid var(--border-accent);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  margin-bottom: 24px;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  background: #040204;
+}
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  filter: contrast(1.05) brightness(0.92);
+}
+
+.banner-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(8, 3, 5, 0.2) 35%, rgba(7, 2, 4, 0.75) 55%, rgba(4, 2, 3, 0.95) 75%, rgba(4, 2, 3, 1.0) 100%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 65%;
+  z-index: 2;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.95);
+}
+
+.name-title {
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.role-subtitle {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  color: #d9cbce;
+  margin-bottom: 4px;
+}
+
+.role-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--blood-red-crimson);
+}
+
+/* Spider Container */
+#spiderContainer {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  z-index: 5;
+  animation: spiderBob 6s ease-in-out infinite;
+}
+
+#spiderThread {
+  width: 1px;
+  height: 55px;
+  background: linear-gradient(to bottom, rgba(139, 17, 26, 0.7), rgba(74, 4, 4, 0.2));
+  margin: 0 auto;
+}
+
+#spider {
+  width: 18px;
+  height: 22px;
+  position: relative;
+}
+
+.spider-head {
+  width: 6px;
+  height: 5px;
+  background: #1a0305;
+  border: 1px solid var(--blood-red-crimson);
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.spider-abdomen {
+  width: 11px;
+  height: 14px;
+  background: #110203;
+  border: 1px solid var(--blood-red-deep);
+  border-radius: 50%;
+  margin: -2px auto 0 auto;
+  position: relative;
+}
+
+.spider-marking {
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+  width: 4px;
+  height: 6px;
+  background-color: var(--blood-red-crimson);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+@keyframes spiderBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
+
+/* Dynamic Typewriter */
+.typewriter-container {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: #d9cbce;
+  min-height: 36px;
+  margin-bottom: 18px;
+  letter-spacing: 0.05em;
+}
+
+.typewriter-cursor {
+  color: var(--blood-red-crimson);
+  animation: blink 0.8s infinite;
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Social Badges */
+.social-badges-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.badge-link {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-linkedin {
+  background-color: #0077b5;
+}
+
+.badge-github {
+  background-color: #24292e;
+  border: 1px solid #444;
+}
+
+/* Skills Squircle Tiles */
+.skills-tiles-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.skills-tiles-img {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+}
+
+/* Mode Subtext */
+.mode-subtext {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #7a6b6d;
+  letter-spacing: 0.06em;
+  margin-bottom: 24px;
+}
+
+.divider-wrapper {
+  margin-bottom: 30px;
+}
+
+/* Section Headings */
+.cmd-section {
+  margin-bottom: 36px;
+}
+
+.cmd-header h2 {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.quote-style {
+  background: var(--bg-card);
+  border-left: 3px solid var(--blood-red-crimson);
+  padding: 14px 20px;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #f0ecec;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.intro-p {
+  font-size: 14.5px;
+  color: #d9cbce;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.cmd-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+  color: #a89a9c;
+}
+
+.cmd-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+
+.cmd-list li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: var(--blood-red-crimson);
+  font-size: 18px;
+}
+
+.card-img-wrapper {
+  margin-bottom: 14px;
+}
+
+.card-img-wrapper img {
+  border-radius: 8px;
+  display: block;
+}
+
+/* Telemetry Grid */
+.telemetry-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.footer-sign {
+  text-align: center;
+  margin-top: 30px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-sub);
+  letter-spacing: 0.15em;
+}
+
+@media (max-width: 768px) {
+  .name-title {
+    font-size: 32px;
+  }
+  .role-subtitle {
+    font-size: 13px;
+  }
+  .telemetry-row {
+    grid-template-columns: 1fr;
+  }
+  .banner-text {
+    left: 50%;
+    width: 90%;
+  }
+  .video-frame {
+    height: 240px;
+  }
+}

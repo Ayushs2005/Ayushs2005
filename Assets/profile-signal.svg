@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090608" />
+      <stop offset="100%" stop-color="#140609" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#240205" />
+    </linearGradient>
+    <radialGradient id="rankGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b111a" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="cardPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 0,10 L 20,10 M 10,0 L 10,20" stroke="#330005" stroke-width="0.3" stroke-opacity="0.2" />
+    </pattern>
+    <style>
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="540" height="220" rx="10" fill="url(#cardBg)" />
+  <rect width="540" height="220" rx="10" fill="url(#cardPattern)" />
+  <rect x="1" y="1" width="538" height="218" rx="9" fill="none" stroke="url(#borderGrad)" stroke-width="1.2" />
+
+  <!-- Header Section -->
+  <g transform="translate(24, 28)">
+    <circle cx="4" cy="4" r="4" fill="#8b111a" />
+    <text x="18" y="8" fill="#d9cbce" font-size="12" font-weight="700" class="mono" letter-spacing="0.15em">PROFILE SIGNAL ASSESSMENT</text>
+    <text x="490" y="8" fill="#6e5c5f" font-size="10" font-weight="600" class="mono" text-anchor="end">SDET // CLOUD</text>
+    <line x1="0" y1="20" x2="492" y2="20" stroke="#380408" stroke-width="1" />
+  </g>
+
+  <!-- Left: A+ Grade Visual -->
+  <g transform="translate(85, 130)">
+    <circle cx="0" cy="0" r="48" fill="url(#rankGlow)" />
+    <circle cx="0" cy="0" r="42" fill="#0d0406" stroke="#4a0404" stroke-width="1.5" />
+    <!-- Hex / Web Accent -->
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="none" stroke="#8b111a" stroke-width="0.8" stroke-opacity="0.6" />
+    <text x="-4" y="16" fill="#ffffff" font-size="44" font-weight="900" class="sans" text-anchor="middle">A<tspan font-size="30" fill="#a81a25" dx="2" dy="-10">+</tspan></text>
+  </g>
+
+  <!-- Right: Metrics Breakdown -->
+  <g transform="translate(180, 75)">
+    <!-- Metric 1: Test Automation & Stability -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="12" fill="#b0a0a3" font-size="11" class="mono">TEST AUTOMATION &amp; RELIABILITY</text>
+      <text x="320" y="12" fill="#d4b8bb" font-size="11" font-weight="700" class="mono" text-anchor="end">99.4%</text>
+      <rect x="0" y="18" width="320" height="4" rx="2" fill="#240205" />
+      <rect x="0" y="18" width="318" height="4" rx="2" fill="#8b111a" />
+    </g>
+
+    <!-- Metric 2: Cloud Telemetry & Serverless -->
+    <g transform="translate(0, 32)">
+      <text x="0" y="12" fill="#b0a0a3" font-size="11" class="mono">CLOUD ARCHITECTURE (AWS/AZURE)</text>
+      <text x="320" y="12" fill="#d4b8bb" font-size="11" font-weight="700" class="mono" text-anchor="end">VERIFIED</text>
+      <rect x="0" y="18" width="320" height="4" rx="2" fill="#240205" />
+      <rect x="0" y="18" width="305" height="4" rx="2" fill="#660000" />
+    </g>
+
+    <!-- Metric 3: API & DB Deep Validation -->
+    <g transform="translate(0, 64)">
+      <text x="0" y="12" fill="#b0a0a3" font-size="11" class="mono">API &amp; DATA INTEGRITY RIGOR</text>
+      <text x="320" y="12" fill="#d4b8bb" font-size="11" font-weight="700" class="mono" text-anchor="end">EXEMPLARY</text>
+      <rect x="0" y="18" width="320" height="4" rx="2" fill="#240205" />
+      <rect x="0" y="18" width="312" height="4" rx="2" fill="#8b111a" />
+    </g>
+
+    <!-- Metric 4: CI/CD Quality Pipeline Gates -->
+    <g transform="translate(0, 96)">
+      <text x="0" y="12" fill="#b0a0a3" font-size="11" class="mono">CI/CD PIPELINE AUTOMATION</text>
+      <text x="320" y="12" fill="#d4b8bb" font-size="11" font-weight="700" class="mono" text-anchor="end">ACTIVE</text>
+      <rect x="0" y="18" width="320" height="4" rx="2" fill="#240205" />
+      <rect x="0" y="18" width="315" height="4" rx="2" fill="#660000" />
+    </g>
+  </g>
+</svg>

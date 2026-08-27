@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080507" />
+      <stop offset="100%" stop-color="#140609" />
+    </linearGradient>
+    <linearGradient id="mBrd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#240205" />
+    </linearGradient>
+    <style>
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="200" rx="8" fill="url(#mBg)" />
+  <rect x="1" y="1" width="848" height="198" rx="7" fill="none" stroke="url(#mBrd)" stroke-width="1.2" />
+
+  <!-- Mission 01: AWS Cloud Telemetry & Alerting Engine -->
+  <g transform="translate(24, 20)">
+    <rect width="385" height="160" rx="6" fill="#100305" stroke="#380306" stroke-width="1" />
+    <g transform="translate(18, 20)">
+      <rect x="0" y="0" width="65" height="18" rx="3" fill="#240204" />
+      <text x="32" y="12" fill="#8b111a" font-size="9" font-weight="700" class="mono" text-anchor="middle">MISSION 01</text>
+      <text x="0" y="42" fill="#ffffff" font-size="14" font-weight="700" class="sans">AWS Cloud Telemetry Engine</text>
+      <text x="0" y="62" fill="#8f7c7f" font-size="10.5" class="mono">Serverless monitoring architecture using AWS</text>
+      <text x="0" y="78" fill="#8f7c7f" font-size="10.5" class="mono">Lambda, CloudWatch metric filters &amp; SNS.</text>
+      
+      <!-- Tech Stack -->
+      <g transform="translate(0, 100)">
+        <rect x="0" y="0" width="68" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="34" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">Lambda</text>
+        <rect x="74" y="0" width="82" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="115" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">CloudWatch</text>
+        <rect x="162" y="0" width="55" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="189" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">SNS</text>
+        <rect x="223" y="0" width="60" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="253" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">Python</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mission 02: SoilSense Horizon IoT & Cloud Platform -->
+  <g transform="translate(441, 20)">
+    <rect width="385" height="160" rx="6" fill="#100305" stroke="#380306" stroke-width="1" />
+    <g transform="translate(18, 20)">
+      <rect x="0" y="0" width="65" height="18" rx="3" fill="#240204" />
+      <text x="32" y="12" fill="#8b111a" font-size="9" font-weight="700" class="mono" text-anchor="middle">MISSION 02</text>
+      <text x="0" y="42" fill="#ffffff" font-size="14" font-weight="700" class="sans">SoilSense Horizon Platform</text>
+      <text x="0" y="62" fill="#8f7c7f" font-size="10.5" class="mono">Cloud-deployed telemetry &amp; sensor analytics</text>
+      <text x="0" y="78" fill="#8f7c7f" font-size="10.5" class="mono">dashboard with resilient REST API integration.</text>
+      
+      <!-- Tech Stack -->
+      <g transform="translate(0, 100)">
+        <rect x="0" y="0" width="75" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="37" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">Cloud Deploy</text>
+        <rect x="81" y="0" width="55" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="108" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">React</text>
+        <rect x="142" y="0" width="75" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="179" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">REST APIs</text>
+        <rect x="223" y="0" width="65" height="20" rx="3" fill="#1c0407" stroke="#4a0404" stroke-width="0.8" />
+        <text x="255" y="13" fill="#a89a9c" font-size="9" class="mono" text-anchor="middle">Node.js</text>
+      </g>
+    </g>
+  </g>
+</svg>

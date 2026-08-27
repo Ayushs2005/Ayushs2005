@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="m2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0507" />
+      <stop offset="60%" stop-color="#120508" />
+      <stop offset="100%" stop-color="#080305" />
+    </linearGradient>
+    <linearGradient id="m2Border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#2b0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      @keyframes pulseNode2 {
+        0%, 100% { fill: #8b111a; opacity: 0.5; }
+        50% { fill: #c41e2c; opacity: 1; }
+      }
+      .live-node2 { animation: pulseNode2 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="850" height="240" rx="10" fill="url(#m2Bg)" />
+  <rect x="1" y="1" width="848" height="238" rx="9" fill="none" stroke="url(#m2Border)" stroke-width="1.2" />
+
+  <!-- Top Header & Mission Badge -->
+  <g transform="translate(24, 26)">
+    <rect width="82" height="22" rx="4" fill="#240204" stroke="#660000" stroke-width="1" />
+    <text x="41" y="15" fill="#e8dadc" font-size="10" font-weight="700" class="mono" text-anchor="middle">MISSION 02</text>
+    
+    <text x="96" y="16" fill="#ffffff" font-size="16" font-weight="800" class="sans">SoilSense Horizon IoT &amp; Cloud Platform</text>
+    
+    <!-- Status -->
+    <g transform="translate(710, 0)">
+      <circle cx="0" cy="11" r="4" class="live-node2" />
+      <text x="12" y="15" fill="#a89a9c" font-size="10" class="mono">LIVE / OPERATIONAL</text>
+    </g>
+    
+    <line x1="0" y1="32" x2="800" y2="32" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Body Content -->
+  <g transform="translate(24, 78)">
+    <!-- Problem & Solution Column -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="14" fill="#8b111a" font-size="11" font-weight="700" class="mono">[ ARCHITECTURE OVERVIEW ]</text>
+      <text x="0" y="34" fill="#d9cbce" font-size="12.5" class="sans">Engineered a full-stack agricultural sensor telemetry platform aggregating hardware sensor feeds</text>
+      <text x="0" y="52" fill="#d9cbce" font-size="12.5" class="sans">into real-time responsive dashboards with resilient REST API endpoints and document caching.</text>
+      
+      <text x="0" y="78" fill="#8f7c7f" font-size="11" class="mono"><tspan fill="#660000">CONTRIBUTION:</tspan> Cloud deployment pipeline · REST API verification layer · Real-time data ingestion</text>
+    </g>
+
+    <!-- Tech Stack Logos Strip (Curved Tiles) -->
+    <g transform="translate(0, 98)">
+      <!-- Cloud Deploy Tile -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#FF9900" font-size="16" font-weight="900" class="mono">☁️</text>
+        <text x="36" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">Cloud Deploy</text>
+        <text x="36" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Hosting &amp; CI/CD</text>
+      </g>
+
+      <!-- React Tile -->
+      <g transform="translate(125, 0)">
+        <rect width="105" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#00D8FF" font-size="16" font-weight="900" class="mono">⚛</text>
+        <text x="34" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">React</text>
+        <text x="34" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Telemetry UI</text>
+      </g>
+
+      <!-- REST APIs Tile -->
+      <g transform="translate(240, 0)">
+        <rect width="115" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#2EAD33" font-size="15" font-weight="900" class="mono">⚡</text>
+        <text x="34" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">REST APIs</text>
+        <text x="34" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Contract Testing</text>
+      </g>
+
+      <!-- MongoDB Tile -->
+      <g transform="translate(365, 0)">
+        <rect width="115" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#47A248" font-size="16" font-weight="900" class="mono">🍃</text>
+        <text x="34" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">MongoDB</text>
+        <text x="34" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Sensor Schema</text>
+      </g>
+
+      <!-- Metric Highlight Badge -->
+      <g transform="translate(490, 0)">
+        <rect width="310" height="42" rx="6" fill="#1c0407" stroke="#8b111a" stroke-width="1" />
+        <text x="15" y="19" fill="#e8dadc" font-size="10.5" font-weight="700" class="mono">KEY TELEMETRY IMPACT</text>
+        <text x="15" y="33" fill="#a8898c" font-size="9.5" class="mono">Real-Time Sensor Sync · Sub-second Ingestion</text>
+      </g>
+    </g>
+  </g>
+</svg>

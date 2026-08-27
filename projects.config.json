@@ -1,0 +1,59 @@
+{
+  "developer": {
+    "name": "Ayush Sharma",
+    "handle": "Ayushs2005",
+    "title": "Cloud Architect · SDET · Resilient Systems",
+    "location": "India",
+    "currentRole": "SDET-1 @ Infinite Locus",
+    "focusAreas": [
+      "Cloud Infrastructure (AWS & Azure)",
+      "Test Automation (Playwright & Python)",
+      "API & Database Integrity Validation",
+      "Continuous Integration & Continuous Quality Gates"
+    ]
+  },
+  "missions": [
+    {
+      "id": "mission-01",
+      "index": "01",
+      "name": "AWS Cloud Telemetry & Alerting Engine",
+      "category": "Cloud Architecture / Serverless",
+      "summary": "Automated serverless cloud monitoring and telemetry pipeline processing real-time infrastructure metrics with event-driven alerting.",
+      "problemSolved": "Eliminated manual infrastructure inspection by architecting automated anomaly alerting with zero latency overhead.",
+      "myContribution": "Engineered Python Lambda execution handlers, structured CloudWatch alarm metric filters, and integrated SNS notification topics.",
+      "techStack": ["AWS Lambda", "CloudWatch", "SNS", "Python", "Serverless"],
+      "status": "Deployed / Operational",
+      "githubUrl": "https://github.com/Ayushs2005",
+      "liveUrl": ""
+    },
+    {
+      "id": "mission-02",
+      "index": "02",
+      "name": "SoilSense Horizon IoT & Cloud Platform",
+      "category": "Cloud Deployment / Full Stack Telemetry",
+      "summary": "High-reliability agricultural telemetry platform aggregating IoT telemetry streams into interactive real-time visual dashboards.",
+      "problemSolved": "Bridged hardware sensor telemetry with scalable cloud infrastructure and responsive client interfaces.",
+      "myContribution": "Implemented cloud hosting pipelines, REST API verification layers, and real-time sensor data synchronization.",
+      "techStack": ["AWS / Cloud", "React", "REST APIs", "Node.js", "MongoDB"],
+      "status": "Deployed / Operational",
+      "githubUrl": "https://github.com/Ayushs2005",
+      "liveUrl": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "code": "AZ-104",
+      "issuer": "Microsoft",
+      "focus": "Cloud Infrastructure, Virtual Networking, Identity & Security",
+      "badge": "Assets/verified-credentials.svg"
+    },
+    {
+      "name": "AWS Academy Cloud Fundamentals",
+      "code": "AWS-ACF",
+      "issuer": "Amazon Web Services",
+      "focus": "Core Cloud Services, Compute, Storage, Security & Billing",
+      "badge": "Assets/verified-credentials.svg"
+    }
+  ]
+}

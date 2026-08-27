@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080507" />
+      <stop offset="100%" stop-color="#120508" />
+    </linearGradient>
+    <linearGradient id="dBrd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="100%" stop-color="#1c0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="540" height="140" rx="8" fill="url(#dBg)" />
+  <rect x="1" y="1" width="538" height="138" rx="7" fill="none" stroke="url(#dBrd)" stroke-width="1.2" />
+
+  <!-- Category Title -->
+  <g transform="translate(20, 26)">
+    <!-- Git Branch / Pipe Icon -->
+    <circle cx="4" cy="6" r="3" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <circle cx="4" cy="20" r="3" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <circle cx="16" cy="13" r="3" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <path d="M 4 9 L 4 17 M 4 9 Q 4 13 13 13" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <text x="44" y="18" fill="#e8dadc" font-size="13" font-weight="700" class="mono" letter-spacing="0.12em">DEVOPS &amp; INFRASTRUCTURE</text>
+    <text x="495" y="18" fill="#665053" font-size="10" class="mono" text-anchor="end">PIPELINES</text>
+    <line x1="0" y1="32" x2="500" y2="32" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Badges / Items -->
+  <g transform="translate(20, 78)">
+    <!-- Docker -->
+    <g transform="translate(0, 0)">
+      <rect width="90" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="45" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Docker</text>
+      <text x="45" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Containers</text>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(100, 0)">
+      <rect width="90" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="45" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Linux</text>
+      <text x="45" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">CLI / Kernel</text>
+    </g>
+
+    <!-- CI/CD Workflows -->
+    <g transform="translate(200, 0)">
+      <rect width="115" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="57" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">CI/CD Pipelines</text>
+      <text x="57" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Automated Gates</text>
+    </g>
+
+    <!-- Git & GitHub -->
+    <g transform="translate(325, 0)">
+      <rect width="85" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="42" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Git</text>
+      <text x="42" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Version Control</text>
+    </g>
+
+    <!-- GitHub Actions -->
+    <g transform="translate(420, 0)">
+      <rect width="80" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="40" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Actions</text>
+      <text x="40" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Runners</text>
+    </g>
+  </g>
+</svg>

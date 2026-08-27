@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="m1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0507" />
+      <stop offset="60%" stop-color="#120508" />
+      <stop offset="100%" stop-color="#080305" />
+    </linearGradient>
+    <linearGradient id="m1Border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#2b0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      @keyframes pulseNode {
+        0%, 100% { fill: #8b111a; opacity: 0.5; }
+        50% { fill: #c41e2c; opacity: 1; }
+      }
+      .live-node { animation: pulseNode 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="850" height="240" rx="10" fill="url(#m1Bg)" />
+  <rect x="1" y="1" width="848" height="238" rx="9" fill="none" stroke="url(#m1Border)" stroke-width="1.2" />
+
+  <!-- Top Header & Mission Badge -->
+  <g transform="translate(24, 26)">
+    <rect width="82" height="22" rx="4" fill="#240204" stroke="#660000" stroke-width="1" />
+    <text x="41" y="15" fill="#e8dadc" font-size="10" font-weight="700" class="mono" text-anchor="middle">MISSION 01</text>
+    
+    <text x="96" y="16" fill="#ffffff" font-size="16" font-weight="800" class="sans">AWS Cloud Telemetry &amp; Alerting Engine</text>
+    
+    <!-- Status -->
+    <g transform="translate(710, 0)">
+      <circle cx="0" cy="11" r="4" class="live-node" />
+      <text x="12" y="15" fill="#a89a9c" font-size="10" class="mono">LIVE / OPERATIONAL</text>
+    </g>
+    
+    <line x1="0" y1="32" x2="800" y2="32" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Body Content -->
+  <g transform="translate(24, 78)">
+    <!-- Problem & Solution Column -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="14" fill="#8b111a" font-size="11" font-weight="700" class="mono">[ ARCHITECTURE OVERVIEW ]</text>
+      <text x="0" y="34" fill="#d9cbce" font-size="12.5" class="sans">Architected an automated, event-driven cloud telemetry and anomaly detection pipeline</text>
+      <text x="0" y="52" fill="#d9cbce" font-size="12.5" class="sans">that continuously filters distributed log groups, flags threshold breaches, and triggers instant SNS alerts.</text>
+      
+      <text x="0" y="78" fill="#8f7c7f" font-size="11" class="mono"><tspan fill="#660000">CONTRIBUTION:</tspan> Python Lambda execution handlers · Metric Filter expressions · CloudWatch Alarms</text>
+    </g>
+
+    <!-- Tech Stack Logos Strip (Curved Tiles) -->
+    <g transform="translate(0, 98)">
+      <!-- AWS Lambda Tile -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <!-- Lambda Symbol -->
+        <text x="14" y="27" fill="#FF9900" font-size="18" font-weight="900" class="mono">λ</text>
+        <text x="32" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">AWS Lambda</text>
+        <text x="32" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Serverless Core</text>
+      </g>
+
+      <!-- CloudWatch Tile -->
+      <g transform="translate(125, 0)">
+        <rect width="135" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#0078D4" font-size="16" font-weight="900" class="mono">📊</text>
+        <text x="36" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">CloudWatch</text>
+        <text x="36" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Telemetry &amp; Filters</text>
+      </g>
+
+      <!-- SNS Tile -->
+      <g transform="translate(270, 0)">
+        <rect width="105" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#FF4F00" font-size="15" font-weight="900" class="mono">🔔</text>
+        <text x="34" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">Amazon SNS</text>
+        <text x="34" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Event Topics</text>
+      </g>
+
+      <!-- Python Tile -->
+      <g transform="translate(385, 0)">
+        <rect width="105" height="42" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
+        <text x="12" y="27" fill="#387EB8" font-size="16" font-weight="900" class="mono">🐍</text>
+        <text x="34" y="20" fill="#ffffff" font-size="11" font-weight="700" class="sans">Python 3.x</text>
+        <text x="34" y="32" fill="#8f7c7f" font-size="8.5" class="mono">Handler Engine</text>
+      </g>
+
+      <!-- Metric Highlight Badge -->
+      <g transform="translate(500, 0)">
+        <rect width="300" height="42" rx="6" fill="#1c0407" stroke="#8b111a" stroke-width="1" />
+        <text x="15" y="19" fill="#e8dadc" font-size="10.5" font-weight="700" class="mono">KEY TELEMETRY IMPACT</text>
+        <text x="15" y="33" fill="#a8898c" font-size="9.5" class="mono">0 Anomaly Escapes · &lt;200ms Execution Time</text>
+      </g>
+    </g>
+  </g>
+</svg>

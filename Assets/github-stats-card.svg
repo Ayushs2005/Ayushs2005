@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="statCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090608" />
+      <stop offset="100%" stop-color="#140609" />
+    </linearGradient>
+    <linearGradient id="statBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#240205" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      @keyframes statPulse {
+        0%, 100% { fill: #8b111a; opacity: 0.6; }
+        50% { fill: #c41e2c; opacity: 1; }
+      }
+      .stat-dot { animation: statPulse 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="540" height="230" rx="10" fill="url(#statCardBg)" />
+  <rect x="1" y="1" width="538" height="228" rx="9" fill="none" stroke="url(#statBorder)" stroke-width="1.2" />
+
+  <!-- Header -->
+  <g transform="translate(24, 26)">
+    <circle cx="4" cy="4" r="4" class="stat-dot" />
+    <text x="18" y="8" fill="#d9cbce" font-size="12" font-weight="700" class="mono" letter-spacing="0.15em">GITHUB ACTIVITY TELEMETRY</text>
+    <text x="490" y="8" fill="#8b111a" font-size="10" font-weight="700" class="mono" text-anchor="end">@Ayushs2005</text>
+    <line x1="0" y1="18" x2="492" y2="18" stroke="#380408" stroke-width="1" />
+  </g>
+
+  <!-- Metrics Grid (4 Main Cells) -->
+  <g transform="translate(24, 62)">
+    <!-- Total Stars -->
+    <g transform="translate(0, 0)">
+      <rect width="115" height="68" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+      <text x="12" y="20" fill="#a89a9c" font-size="9.5" font-weight="700" class="mono">TOTAL STARS</text>
+      <text x="12" y="48" fill="#ffffff" font-size="24" font-weight="900" class="sans">48</text>
+      <text x="88" y="48" fill="#d4962b" font-size="14">★</text>
+    </g>
+
+    <!-- Total Commits (100+) -->
+    <g transform="translate(125, 0)">
+      <rect width="115" height="68" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+      <text x="12" y="20" fill="#a89a9c" font-size="9.5" font-weight="700" class="mono">COMMITS</text>
+      <text x="12" y="48" fill="#ffffff" font-size="24" font-weight="900" class="sans">100<tspan font-size="16" fill="#d12438">+</tspan></text>
+      <text x="88" y="48" fill="#d12438" font-size="14">⚡</text>
+    </g>
+
+    <!-- Total Pull Requests (10+) -->
+    <g transform="translate(250, 0)">
+      <rect width="115" height="68" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+      <text x="12" y="20" fill="#a89a9c" font-size="9.5" font-weight="700" class="mono">PULL REQUESTS</text>
+      <text x="12" y="48" fill="#ffffff" font-size="24" font-weight="900" class="sans">10<tspan font-size="16" fill="#3fa366">+</tspan></text>
+      <text x="88" y="48" fill="#3fa366" font-size="14">⇅</text>
+    </g>
+
+    <!-- Total Issues / Reviews -->
+    <g transform="translate(375, 0)">
+      <rect width="115" height="68" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+      <text x="12" y="20" fill="#a89a9c" font-size="9.5" font-weight="700" class="mono">ISSUES/QA</text>
+      <text x="12" y="48" fill="#ffffff" font-size="24" font-weight="900" class="sans">5<tspan font-size="16" fill="#6d7ca8">+</tspan></text>
+      <text x="88" y="48" fill="#6d7ca8" font-size="14">⦿</text>
+    </g>
+
+    <!-- Lower Summary Row -->
+    <g transform="translate(0, 80)">
+      <rect width="490" height="52" rx="6" fill="#170609" stroke="#4a0404" stroke-width="1" />
+      <g transform="translate(16, 20)">
+        <text x="0" y="0" fill="#e8dadc" font-size="10.5" font-weight="700" class="mono">PUBLIC REPOSITORIES : <tspan fill="#ffffff">13</tspan></text>
+        <text x="240" y="0" fill="#e8dadc" font-size="10.5" font-weight="700" class="mono">PROFILE SIGNAL : <tspan fill="#d12438">A+ GRADE</tspan></text>
+        <text x="0" y="18" fill="#8f7c7f" font-size="9.5" class="mono">100+ COMMITS · CONTINUOUS QUALITY WORKFLOWS // VERIFIED</text>
+      </g>
+    </g>
+  </g>
+</svg>

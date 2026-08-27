@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080507" />
+      <stop offset="100%" stop-color="#120508" />
+    </linearGradient>
+    <linearGradient id="eBrd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="100%" stop-color="#1c0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="540" height="140" rx="8" fill="url(#eBg)" />
+  <rect x="1" y="1" width="538" height="138" rx="7" fill="none" stroke="url(#eBrd)" stroke-width="1.2" />
+
+  <!-- Category Title -->
+  <g transform="translate(20, 26)">
+    <!-- Terminal / Code Icon -->
+    <path d="M 2 4 L 10 12 L 2 20 M 14 20 L 24 20" fill="none" stroke="#8b111a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="44" y="18" fill="#e8dadc" font-size="13" font-weight="700" class="mono" letter-spacing="0.12em">ENGINEERING &amp; AUTOMATION</text>
+    <text x="495" y="18" fill="#665053" font-size="10" class="mono" text-anchor="end">CORE CODE</text>
+    <line x1="0" y1="32" x2="500" y2="32" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Badges / Items -->
+  <g transform="translate(20, 78)">
+    <!-- Playwright -->
+    <g transform="translate(0, 0)">
+      <rect width="115" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="57" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Playwright</text>
+      <text x="57" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">E2E Automation</text>
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(125, 0)">
+      <rect width="90" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="45" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Python</text>
+      <text x="45" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Automation / SDK</text>
+    </g>
+
+    <!-- JavaScript / Java -->
+    <g transform="translate(225, 0)">
+      <rect width="90" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="45" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">JavaScript</text>
+      <text x="45" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Async / Node</text>
+    </g>
+
+    <!-- Java -->
+    <g transform="translate(325, 0)">
+      <rect width="85" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="42" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Java</text>
+      <text x="42" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Enterprise OOP</text>
+    </g>
+
+    <!-- Bash -->
+    <g transform="translate(420, 0)">
+      <rect width="80" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="40" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Bash</text>
+      <text x="40" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Shell Scripting</text>
+    </g>
+  </g>
+</svg>

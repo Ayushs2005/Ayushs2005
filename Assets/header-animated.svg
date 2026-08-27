@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" width="100%" height="290">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.0" />
+      <stop offset="35%" stop-color="#050204" stop-opacity="0.2" />
+      <stop offset="55%" stop-color="#070204" stop-opacity="0.75" />
+      <stop offset="75%" stop-color="#040203" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#040203" stop-opacity="1.0" />
+    </linearGradient>
+
+    <linearGradient id="crimsonFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#330003" />
+    </linearGradient>
+
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.95" />
+    </filter>
+
+    <style>
+      .hero-name {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 48px;
+        letter-spacing: 0.08em;
+        fill: #ffffff;
+      }
+      .hero-role {
+        font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+        font-weight: 600;
+        font-size: 15.5px;
+        letter-spacing: 0.14em;
+        fill: #d9cbce;
+      }
+      .hero-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 10.5px;
+        letter-spacing: 0.18em;
+        fill: #8b111a;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <clipPath id="headerClip">
+    <rect width="920" height="290" rx="12" />
+  </clipPath>
+
+  <g clip-path="url(#headerClip)">
+    <!-- Animated GIF Background (Ichigo prominently on left with ample headroom) -->
+    <image href="header-banner.gif" x="0" y="0" width="920" height="290" preserveAspectRatio="xMidYMid slice" />
+    
+    <!-- Atmospheric Contrast Scrim -->
+    <rect width="920" height="290" fill="url(#headerGrad)" />
+
+    <!-- Corner Spider Web Accent -->
+    <g opacity="0.3" transform="translate(10, 10)">
+      <path d="M 0 0 L 100 16 M 0 0 L 75 60 M 0 0 L 35 90" stroke="#8b111a" stroke-width="0.8" fill="none" />
+      <path d="M 30 5 Q 20 16 8 24" stroke="#8b111a" stroke-width="0.6" fill="none" />
+      <path d="M 60 10 Q 42 32 16 48" stroke="#8b111a" stroke-width="0.6" fill="none" />
+    </g>
+
+    <!-- Top Right Spider Thread & Spider -->
+    <g transform="translate(860, 0)">
+      <line x1="0" y1="0" x2="0" y2="55" stroke="#8b111a" stroke-width="0.8" opacity="0.7" />
+      <circle cx="0" cy="57" r="3" fill="#150204" stroke="#8b111a" stroke-width="0.8" />
+      <ellipse cx="0" cy="63" r="4.5" ry="6.5" fill="#100103" stroke="#4a0404" stroke-width="0.8" />
+      <!-- Spider legs -->
+      <path d="M 2 59 Q 10 53 14 61 M -2 59 Q -10 53 -14 61" stroke="#8b111a" stroke-width="0.8" fill="none" />
+      <path d="M 3 63 Q 12 61 15 69 M -3 63 Q -12 61 -15 69" stroke="#660000" stroke-width="0.8" fill="none" />
+    </g>
+
+    <!-- Right-Positioned Typographic Overlay -->
+    <g transform="translate(610, 130)" text-anchor="middle" filter="url(#textShadow)">
+      <!-- Name -->
+      <text x="0" y="20" class="hero-name">Ayush Sharma</text>
+      
+      <!-- Subtitle -->
+      <text x="0" y="58" class="hero-role">Cloud Engineer | SDET | Test Automation</text>
+      
+      <!-- Sub tag -->
+      <text x="0" y="86" class="hero-tag">DISTRIBUTED SYSTEMS • RESILIENCE • CI/CD QUALITY GATES</text>
+    </g>
+  </g>
+
+  <!-- Outer Border Frame -->
+  <rect x="1" y="1" width="918" height="288" rx="11" fill="none" stroke="url(#crimsonFrame)" stroke-width="1.5" />
+</svg>

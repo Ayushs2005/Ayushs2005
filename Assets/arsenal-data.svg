@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dataBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080507" />
+      <stop offset="100%" stop-color="#120508" />
+    </linearGradient>
+    <linearGradient id="dataBrd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="100%" stop-color="#1c0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="540" height="140" rx="8" fill="url(#dataBg)" />
+  <rect x="1" y="1" width="538" height="138" rx="7" fill="none" stroke="url(#dataBrd)" stroke-width="1.2" />
+
+  <!-- Category Title -->
+  <g transform="translate(20, 26)">
+    <!-- Database Cylinder Icon -->
+    <ellipse cx="10" cy="8" rx="9" ry="3.5" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <path d="M 1 8 L 1 18 C 1 21, 19 21, 19 18 L 19 8" fill="none" stroke="#8b111a" stroke-width="1.5" />
+    <path d="M 1 13 C 1 16, 19 16, 19 13" fill="none" stroke="#8b111a" stroke-width="1.2" />
+    <text x="44" y="18" fill="#e8dadc" font-size="13" font-weight="700" class="mono" letter-spacing="0.12em">DATA INTEGRITY &amp; APIS</text>
+    <text x="495" y="18" fill="#665053" font-size="10" class="mono" text-anchor="end">VALIDATION</text>
+    <line x1="0" y1="32" x2="500" y2="32" stroke="#2b0306" stroke-width="1" />
+  </g>
+
+  <!-- Badges / Items -->
+  <g transform="translate(20, 78)">
+    <!-- REST APIs -->
+    <g transform="translate(0, 0)">
+      <rect width="115" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="57" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">REST APIs</text>
+      <text x="57" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Contract Testing</text>
+    </g>
+
+    <!-- Postman -->
+    <g transform="translate(125, 0)">
+      <rect width="90" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="45" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Postman</text>
+      <text x="45" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">API Test Suites</text>
+    </g>
+
+    <!-- MongoDB -->
+    <g transform="translate(225, 0)">
+      <rect width="95" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="47" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">MongoDB</text>
+      <text x="47" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Document DB</text>
+    </g>
+
+    <!-- MySQL -->
+    <g transform="translate(330, 0)">
+      <rect width="85" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="42" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">MySQL</text>
+      <text x="42" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Relational Data</text>
+    </g>
+
+    <!-- Agile/Scrum -->
+    <g transform="translate(425, 0)">
+      <rect width="75" height="38" rx="6" fill="#170508" stroke="#4a0404" stroke-width="1" />
+      <text x="37" y="18" fill="#ffffff" font-size="11.5" font-weight="700" class="sans" text-anchor="middle">Agile</text>
+      <text x="37" y="30" fill="#9e8588" font-size="9" class="mono" text-anchor="middle">Scrum/QA</text>
+    </g>
+  </g>
+</svg>
