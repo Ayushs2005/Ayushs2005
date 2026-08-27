@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="arsCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090507" />
+      <stop offset="100%" stop-color="#140609" />
+    </linearGradient>
+    <linearGradient id="arsBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a0404" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#240205" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 2x2 Full Width Grid (850 Total Width) -->
+  <g transform="translate(0, 0)">
+    <!-- 1. CLOUD ARCHITECTURE (Top-Left: 415x170) -->
+    <g transform="translate(0, 0)">
+      <rect width="415" height="170" rx="10" fill="url(#arsCardBg)" />
+      <rect x="1" y="1" width="413" height="168" rx="9" fill="none" stroke="url(#arsBorder)" stroke-width="1.2" />
+      <g transform="translate(20, 22)">
+        <circle cx="4" cy="4" r="3.5" fill="#8b111a" />
+        <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.1em">CLOUD ARCHITECTURE</text>
+        <line x1="0" y1="18" x2="375" y2="18" stroke="#33080c" stroke-width="1" />
+        <g transform="translate(0, 32)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">AWS ECOSYSTEM</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">Lambda · CloudWatch · SNS · SQS · S3 · IAM</text>
+        </g>
+        <g transform="translate(0, 78)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">MICROSOFT AZURE</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">Compute · Virtual Networks · Governance (AZ-104)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 2. TEST AUTOMATION & QUALITY (Top-Right: 415x170) -->
+    <g transform="translate(435, 0)">
+      <rect width="415" height="170" rx="10" fill="url(#arsCardBg)" />
+      <rect x="1" y="1" width="413" height="168" rx="9" fill="none" stroke="url(#arsBorder)" stroke-width="1.2" />
+      <g transform="translate(20, 22)">
+        <circle cx="4" cy="4" r="3.5" fill="#e62842" />
+        <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.1em">TEST ENGINEERING &amp; SDET</text>
+        <line x1="0" y1="18" x2="375" y2="18" stroke="#33080c" stroke-width="1" />
+        <g transform="translate(0, 32)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">CORE HARNESSES</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">Playwright E2E · Python · PyTest · Java</text>
+        </g>
+        <g transform="translate(0, 78)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">API &amp; INTEGRATION RIGOR</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">REST Assured · Postman · Contract Tests · Assertions</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 3. DEVOPS & CI/CD INFRASTRUCTURE (Bottom-Left: 415x170) -->
+    <g transform="translate(0, 190)">
+      <rect width="415" height="170" rx="10" fill="url(#arsCardBg)" />
+      <rect x="1" y="1" width="413" height="168" rx="9" fill="none" stroke="url(#arsBorder)" stroke-width="1.2" />
+      <g transform="translate(20, 22)">
+        <circle cx="4" cy="4" r="3.5" fill="#f5a623" />
+        <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.1em">DEVOPS &amp; RELEASE GATES</text>
+        <line x1="0" y1="18" x2="375" y2="18" stroke="#33080c" stroke-width="1" />
+        <g transform="translate(0, 32)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">CI/CD PIPELINES</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">GitHub Actions · Automated Regression Signoff</text>
+        </g>
+        <g transform="translate(0, 78)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">CONTAINERS &amp; ENVIRONMENTS</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">Docker · Linux / Bash Scripting · Git Versioning</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. DATA INTEGRITY & DISTRIBUTED SYSTEMS (Bottom-Right: 415x170) -->
+    <g transform="translate(435, 190)">
+      <rect width="415" height="170" rx="10" fill="url(#arsCardBg)" />
+      <rect x="1" y="1" width="413" height="168" rx="9" fill="none" stroke="url(#arsBorder)" stroke-width="1.2" />
+      <g transform="translate(20, 22)">
+        <circle cx="4" cy="4" r="3.5" fill="#48c774" />
+        <text x="16" y="8" fill="#ffffff" font-size="12" font-weight="700" class="mono" letter-spacing="0.1em">DATA INTEGRITY &amp; PERSISTENCE</text>
+        <line x1="0" y1="18" x2="375" y2="18" stroke="#33080c" stroke-width="1" />
+        <g transform="translate(0, 32)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">DATABASE ENGINES</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">MongoDB (Distributed Documents) · MySQL (Relational)</text>
+        </g>
+        <g transform="translate(0, 78)">
+          <text x="0" y="0" fill="#a89a9c" font-size="10" font-weight="700" class="mono">STATE RIGOR</text>
+          <text x="0" y="16" fill="#f0ecec" font-size="11.5" font-weight="600" class="mono">Schema Validation · Latency Profiling · Integrity Gates</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

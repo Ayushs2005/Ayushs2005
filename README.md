@@ -20,13 +20,7 @@
 <!-- SKILLS / ARSENAL APP-STYLE SQUIRCLE TILES -->
 <img src="Assets/skills-tiles.svg" alt="Python, Playwright, AWS, Azure, Docker, Java, MongoDB, MySQL, Linux, Postman, Git" width="100%" />
 
-<br/>
-
 <sub>mode: test automation · architect for failure · zero flakiness · observe, harden, repeat</sub>
-
-<br/><br/>
-
-<img src="Assets/section-divider.svg" alt="divider" width="100%" />
 
 </div>
 
@@ -46,24 +40,10 @@ I work on the parts of distributed systems and quality engineering that make or 
 
 ## 02 // THE ARSENAL
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="Assets/arsenal-cloud.svg" alt="Cloud Architecture" width="100%" />
-    </td>
-    <td width="50%" valign="top">
-      <img src="Assets/arsenal-engineering.svg" alt="Engineering &amp; Automation" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="Assets/arsenal-devops.svg" alt="DevOps &amp; Infrastructure" width="100%" />
-    </td>
-    <td width="50%" valign="top">
-      <img src="Assets/arsenal-data.svg" alt="Data Integrity &amp; APIs" width="100%" />
-    </td>
-  </tr>
-</table>
+<!-- Full-Width 2x2 Arsenal Matrix (Expands 100% Across All Displays) -->
+<div align="center">
+  <img src="Assets/arsenal-matrix.svg" alt="The Arsenal Grid" width="100%" />
+</div>
 
 <div align="center">
   <img src="Assets/section-divider.svg" alt="divider" width="100%" />
