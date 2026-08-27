@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- HERO ANIMATED VIDEO BANNER (100% NATIVELY SUPPORTED GIF COMPOSITE) -->
+<!-- HERO ANIMATED VIDEO BANNER (100% FULL-WIDTH INFINITE LOOPING GIF COMPOSITE) -->
 <img src="Assets/header-banner.gif" alt="Ayush Sharma — Cloud Engineer | SDET | Test Automation" width="100%" />
 
 <br/>
@@ -26,13 +26,10 @@
 
 ## 01 // THE ONE BEHIND THE CODE
 
-> **"Architecting high-resilience cloud infrastructure and automated quality harnesses where distributed systems meet continuous reliability."**
-
-I work on the parts of distributed systems and quality engineering that make or break production: **deterministic Playwright test automation**, **serverless cloud telemetry**, **REST API contract verification**, and **automated CI/CD release readiness** across **AWS** and **Microsoft Azure**.
-
-* **Active Role**: SDET-1 at **Infinite Locus**
-* **Core Domains**: Test Automation Engineering · Cloud Infrastructure · Distributed Data Integrity
-* **Certifications**: Microsoft Certified Azure Administrator (AZ-104) · AWS Academy Cloud Fundamentals
+<!-- Cohesive Dark Card Container for Section 01 -->
+<div align="center">
+  <img src="Assets/about-card.svg" alt="Identity &amp; Engineering Rigor" width="100%" />
+</div>
 
 <div align="center">
   <img src="Assets/section-divider.svg" alt="divider" width="100%" />
@@ -40,7 +37,7 @@ I work on the parts of distributed systems and quality engineering that make or 
 
 ## 02 // THE ARSENAL
 
-<!-- Full-Width 2x2 Arsenal Matrix (Expands 100% Across All Displays) -->
+<!-- Full-Width 2x2 Arsenal Matrix -->
 <div align="center">
   <img src="Assets/arsenal-matrix.svg" alt="The Arsenal Grid" width="100%" />
 </div>
@@ -51,16 +48,10 @@ I work on the parts of distributed systems and quality engineering that make or 
 
 ## 03 // ENGINEERING FOOTPRINT
 
+<!-- Cohesive Engineering Footprint Card -->
 <div align="center">
   <img src="Assets/footprint-card.svg" alt="Engineering Footprint — SDET-1 at Infinite Locus" width="100%" />
 </div>
-
-<br/>
-
-* **Playwright E2E Automation**: Scaling end-to-end regression suites with deterministic assertions and zero flakiness tolerance.
-* **REST API Contract Verification**: Deep validation of payload schemas, response latencies, and edge-case security scenarios.
-* **MongoDB Data Integrity**: Systematic verification of distributed document consistency and state transformations.
-* **CI/CD Quality Gates**: Enforcing automated pre-production signoffs to guarantee release stability.
 
 <div align="center">
   <img src="Assets/section-divider.svg" alt="divider" width="100%" />
@@ -86,14 +77,10 @@ I work on the parts of distributed systems and quality engineering that make or 
 
 ## 05 // VERIFIED CREDENTIALS
 
+<!-- Cohesive Verified Credentials Card -->
 <div align="center">
   <img src="Assets/verified-credentials.svg" alt="Verified Credentials — Azure AZ-104 &amp; AWS Academy" width="100%" />
 </div>
-
-<br/>
-
-* 🛡️ **Microsoft Certified: Azure Administrator Associate (AZ-104)** — Identity, Governance, Compute, Storage &amp; Virtual Networking.
-* 🛡️ **AWS Academy Cloud Fundamentals** — Cloud Architecture, Serverless Workflows, Storage &amp; Security.
 
 <div align="center">
   <img src="Assets/section-divider.svg" alt="divider" width="100%" />

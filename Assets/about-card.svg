@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="abtCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080406" />
+      <stop offset="50%" stop-color="#120508" />
+      <stop offset="100%" stop-color="#060204" />
+    </linearGradient>
+    <linearGradient id="abtBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#660000" />
+      <stop offset="50%" stop-color="#8b111a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#2b0204" />
+    </linearGradient>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+      @keyframes abtPulse {
+        0%, 100% { fill: #8b111a; opacity: 0.6; }
+        50% { fill: #e62842; opacity: 1; }
+      }
+      .abt-dot { animation: abtPulse 2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="850" height="240" rx="10" fill="url(#abtCardBg)" />
+  <rect x="1" y="1" width="848" height="238" rx="9" fill="none" stroke="url(#abtBorder)" stroke-width="1.2" />
+
+  <!-- Content -->
+  <g transform="translate(26, 24)">
+    <!-- Header -->
+    <circle cx="4" cy="4" r="4" class="abt-dot" />
+    <text x="16" y="8" fill="#ffffff" font-size="12.5" font-weight="700" class="mono" letter-spacing="0.12em">ENGINEERING PROFILE // IDENTITY &amp; RIGOR</text>
+    <text x="795" y="8" fill="#e62842" font-size="10.5" font-weight="700" class="mono" text-anchor="end">SDET-1 @ INFINITE LOCUS</text>
+    <line x1="0" y1="20" x2="798" y2="20" stroke="#380a0f" stroke-width="1" />
+
+    <!-- Quote Banner -->
+    <g transform="translate(0, 34)">
+      <rect width="798" height="48" rx="6" fill="#18060a" stroke="#4a0404" stroke-width="1" />
+      <line x1="0" y1="0" x2="0" y2="48" stroke="#e62842" stroke-width="4" />
+      <text x="18" y="29" fill="#f0ecec" font-size="12" font-style="italic" class="sans">
+        "Architecting high-resilience cloud infrastructure and automated quality harnesses where distributed systems meet continuous reliability."
+      </text>
+    </g>
+
+    <!-- 3 Telemetry Columns -->
+    <g transform="translate(0, 96)">
+      <!-- Col 1: Core Domains -->
+      <g transform="translate(0, 0)">
+        <rect width="256" height="88" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+        <g transform="translate(14, 18)">
+          <text x="0" y="0" fill="#e62842" font-size="10" font-weight="700" class="mono">CORE ENGINEERING</text>
+          <text x="0" y="20" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Playwright Automation</text>
+          <text x="0" y="38" fill="#9e8588" font-size="10" class="mono">Deterministic E2E Suites &amp; Flakiness Elimination</text>
+        </g>
+      </g>
+
+      <!-- Col 2: Cloud Infrastructure -->
+      <g transform="translate(271, 0)">
+        <rect width="256" height="88" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+        <g transform="translate(14, 18)">
+          <text x="0" y="0" fill="#f5a623" font-size="10" font-weight="700" class="mono">CLOUD ARCHITECTURE</text>
+          <text x="0" y="20" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">AWS &amp; Azure Certified</text>
+          <text x="0" y="38" fill="#9e8588" font-size="10" class="mono">Serverless Telemetry, Lambda &amp; Azure AZ-104</text>
+        </g>
+      </g>
+
+      <!-- Col 3: Data & API Integrity -->
+      <g transform="translate(542, 0)">
+        <rect width="256" height="88" rx="6" fill="#130608" stroke="#380a0f" stroke-width="1" />
+        <g transform="translate(14, 18)">
+          <text x="0" y="0" fill="#48c774" font-size="10" font-weight="700" class="mono">RELEASE READINESS</text>
+          <text x="0" y="20" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Automated CI/CD Gates</text>
+          <text x="0" y="38" fill="#9e8588" font-size="10" class="mono">REST Assured, MongoDB &amp; Schema Validation</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
