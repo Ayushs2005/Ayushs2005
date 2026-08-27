@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 50" width="100%" height="50">
   <defs>
+    <!-- Full-height clipping masks centered vertically on the 50px canvas -->
     <clipPath id="clipRect1">
       <rect id="typeRect1" x="0" y="0" width="0" height="50" />
     </clipPath>
@@ -11,11 +12,12 @@
     </clipPath>
 
     <style>
-      .mono-code {
-        font-family: 'JetBrains Mono', 'SF Mono', Consolas, 'Fira Code', monospace;
-        font-size: 15px;
-        fill: #d9cbce;
-        letter-spacing: 0.05em;
+      .mono-text {
+        font-family: 'JetBrains Mono', 'SF Mono', Consolas, 'Courier New', monospace;
+        font-size: 15.5px;
+        font-weight: 600;
+        fill: #f0ecec;
+        letter-spacing: 0.06em;
       }
       .cursor-blink {
         animation: blink 0.7s infinite;
@@ -25,45 +27,45 @@
         50% { opacity: 0; }
       }
 
-      /* CSS keyframes on the clipPath rects (100% supported by GitHub SVG CSS parser) */
+      /* Typing and erasing animation for each phrase */
       @keyframes animRect1 {
         0% { width: 0px; }
         2% { width: 0px; }
-        14% { width: 780px; }
-        26% { width: 780px; }
-        32% { width: 0px; }
-        33%, 100% { width: 0px; }
+        15% { width: 850px; }
+        27% { width: 850px; }
+        33% { width: 0px; }
+        34%, 100% { width: 0px; }
       }
       @keyframes animRect2 {
         0%, 33% { width: 0px; }
         35% { width: 0px; }
-        47% { width: 740px; }
-        59% { width: 740px; }
-        65% { width: 0px; }
-        66%, 100% { width: 0px; }
+        48% { width: 850px; }
+        60% { width: 850px; }
+        66% { width: 0px; }
+        67%, 100% { width: 0px; }
       }
       @keyframes animRect3 {
         0%, 66% { width: 0px; }
         68% { width: 0px; }
-        80% { width: 800px; }
-        92% { width: 800px; }
-        98% { width: 0px; }
-        99%, 100% { width: 0px; }
+        81% { width: 850px; }
+        93% { width: 850px; }
+        99% { width: 0px; }
+        100% { width: 0px; }
       }
 
       @keyframes fadeGroup1 {
-        0%, 32% { opacity: 1; }
-        33%, 100% { opacity: 0; }
+        0%, 33% { opacity: 1; }
+        34%, 100% { opacity: 0; }
       }
       @keyframes fadeGroup2 {
         0%, 33% { opacity: 0; }
-        34%, 65% { opacity: 1; }
-        66%, 100% { opacity: 0; }
+        34%, 66% { opacity: 1; }
+        67%, 100% { opacity: 0; }
       }
       @keyframes fadeGroup3 {
         0%, 66% { opacity: 0; }
-        67%, 98% { opacity: 1; }
-        99%, 100% { opacity: 0; }
+        67%, 99% { opacity: 1; }
+        100% { opacity: 0; }
       }
 
       #typeRect1 { animation: animRect1 12s infinite; }
@@ -76,27 +78,27 @@
     </style>
   </defs>
 
-  <!-- Centered Base Group -->
-  <g transform="translate(425, 30)">
+  <!-- Centered Typography with dominant-baseline central so no clipping ever occurs -->
+  <g transform="translate(425, 25)" text-anchor="middle" dominant-baseline="central">
     
     <!-- Phrase 1 (0s to 4s) -->
     <g class="grp-1">
-      <g transform="translate(-390, 0)" clip-path="url(#clipRect1)">
-        <text x="0" y="0" class="mono-code" text-anchor="start">architect for failure <tspan fill="#e62842">|</tspan> eliminate flakiness <tspan fill="#e62842">|</tspan> scale reliability<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
+      <g clip-path="url(#clipRect1)">
+        <text x="0" y="0" class="mono-text">architect for failure <tspan fill="#e62842">|</tspan> eliminate flakiness <tspan fill="#e62842">|</tspan> scale reliability<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
       </g>
     </g>
 
     <!-- Phrase 2 (4s to 8s) -->
     <g class="grp-2">
-      <g transform="translate(-340, 0)" clip-path="url(#clipRect2)">
-        <text x="0" y="0" class="mono-code" text-anchor="start">SDET-1 @ Infinite Locus <tspan fill="#e62842">•</tspan> Cloud Infrastructure (AWS / Azure)<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
+      <g clip-path="url(#clipRect2)">
+        <text x="0" y="0" class="mono-text">SDET-1 @ Infinite Locus <tspan fill="#e62842">•</tspan> Cloud Infrastructure (AWS / Azure)<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
       </g>
     </g>
 
     <!-- Phrase 3 (8s to 12s) -->
     <g class="grp-3">
-      <g transform="translate(-400, 0)" clip-path="url(#clipRect3)">
-        <text x="0" y="0" class="mono-code" text-anchor="start">deterministic test automation <tspan fill="#e62842">→</tspan> serverless telemetry <tspan fill="#e62842">→</tspan> zero-defect deploy<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
+      <g clip-path="url(#clipRect3)">
+        <text x="0" y="0" class="mono-text">deterministic test automation <tspan fill="#e62842">→</tspan> serverless telemetry <tspan fill="#e62842">→</tspan> zero-defect deploy<tspan fill="#e62842" class="cursor-blink">_</tspan></text>
       </g>
     </g>
 
