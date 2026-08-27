@@ -6,7 +6,7 @@
 <br/>
 
 <!-- DYNAMIC ANIMATED TYPEWRITER -->
-<img src="Assets/typewriter.svg" alt="Typewriter: architect for failure | eliminate flakiness | scale reliability" width="100%" />
+<img src="Assets/typewriter.svg" alt="Typewriter" width="100%" height="50" />
 
 <br/>
 
