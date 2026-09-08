@@ -1,4 +1,4 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 260" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 260" width="100%" height="100%">
   <defs>
     <linearGradient id="actFullBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#080406" />
@@ -39,7 +39,7 @@
       <g transform="translate(0, 0)">
         <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
         <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">STARS</text>
-        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">52</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">48</text>
         <text x="68" y="46" fill="#f5a623" font-size="13">&#9733;</text>
       </g>
 
@@ -63,7 +63,7 @@
       <g transform="translate(294, 0)">
         <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
         <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">REPOSITORIES</text>
-        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">18</text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">13</text>
         <text x="68" y="46" fill="#7a88b8" font-size="13">&#128230;</text>
       </g>
     </g>
@@ -102,46 +102,47 @@
       <g transform="translate(0, 0)">
         <circle cx="4" cy="7" r="3.5" fill="#e62842" />
         <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">TypeScript</text>
-        <text x="380" y="11" fill="#ff7084" font-size="11.5" font-weight="700" class="mono" text-anchor="end">27.7%</text>
+        <text x="380" y="11" fill="#ff7084" font-size="11.5" font-weight="700" class="mono" text-anchor="end">31.2%</text>
         <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
-        <rect x="0" y="17" width="105" height="7" rx="3.5" fill="#e62842" />
+        <rect x="0" y="17" width="119" height="7" rx="3.5" fill="#e62842" />
       </g>
 
       <!-- 2. C++ -->
       <g transform="translate(0, 32)">
         <circle cx="4" cy="7" r="3.5" fill="#f5a623" />
         <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">C++</text>
-        <text x="380" y="11" fill="#ffd580" font-size="11.5" font-weight="700" class="mono" text-anchor="end">23.6%</text>
+        <text x="380" y="11" fill="#ffd580" font-size="11.5" font-weight="700" class="mono" text-anchor="end">26.6%</text>
         <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
-        <rect x="0" y="17" width="90" height="7" rx="3.5" fill="#f5a623" />
+        <rect x="0" y="17" width="101" height="7" rx="3.5" fill="#f5a623" />
       </g>
 
-      <!-- 3. HTML -->
+      <!-- 3. Python -->
       <g transform="translate(0, 64)">
         <circle cx="4" cy="7" r="3.5" fill="#e06843" />
-        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">HTML</text>
-        <text x="380" y="11" fill="#ffaa88" font-size="11.5" font-weight="700" class="mono" text-anchor="end">19.9%</text>
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Python</text>
+        <text x="380" y="11" fill="#ffaa88" font-size="11.5" font-weight="700" class="mono" text-anchor="end">11.2%</text>
         <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
-        <rect x="0" y="17" width="76" height="7" rx="3.5" fill="#e06843" />
+        <rect x="0" y="17" width="42" height="7" rx="3.5" fill="#e06843" />
       </g>
 
-      <!-- 4. Python -->
+      <!-- 4. HTML -->
       <g transform="translate(0, 96)">
         <circle cx="4" cy="7" r="3.5" fill="#48c774" />
-        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Python</text>
-        <text x="380" y="11" fill="#a3f0bd" font-size="11.5" font-weight="700" class="mono" text-anchor="end">9.9%</text>
+        <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">HTML</text>
+        <text x="380" y="11" fill="#a3f0bd" font-size="11.5" font-weight="700" class="mono" text-anchor="end">9.6%</text>
         <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
-        <rect x="0" y="17" width="38" height="7" rx="3.5" fill="#48c774" />
+        <rect x="0" y="17" width="36" height="7" rx="3.5" fill="#48c774" />
       </g>
 
       <!-- 5. Others -->
       <g transform="translate(0, 128)">
         <circle cx="4" cy="7" r="3.5" fill="#7a88b8" />
         <text x="14" y="11" fill="#ffffff" font-size="11.5" font-weight="700" class="mono">Others</text>
-        <text x="380" y="11" fill="#c4cce8" font-size="11.5" font-weight="700" class="mono" text-anchor="end">18.9%</text>
+        <text x="380" y="11" fill="#c4cce8" font-size="11.5" font-weight="700" class="mono" text-anchor="end">21.4%</text>
         <rect x="0" y="17" width="380" height="7" rx="3.5" fill="#18070a" stroke="#3a0f16" stroke-width="1" />
-        <rect x="0" y="17" width="72" height="7" rx="3.5" fill="#7a88b8" />
+        <rect x="0" y="17" width="81" height="7" rx="3.5" fill="#7a88b8" />
       </g>
+
     </g>
   </g>
 </svg>
