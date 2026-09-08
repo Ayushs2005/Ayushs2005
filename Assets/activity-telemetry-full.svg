@@ -47,7 +47,7 @@
       <g transform="translate(98, 0)">
         <rect width="90" height="64" rx="6" fill="#140608" stroke="#4a0404" stroke-width="1" />
         <text x="10" y="18" fill="#a89a9c" font-size="9" font-weight="700" class="mono">COMMITS</text>
-        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">95<tspan font-size="14" fill="#e62842">+</tspan></text>
+        <text x="10" y="46" fill="#ffffff" font-size="22" font-weight="900" class="sans">96<tspan font-size="14" fill="#e62842">+</tspan></text>
         <text x="70" y="46" fill="#e62842" font-size="13">&#9889;</text>
       </g>
 
