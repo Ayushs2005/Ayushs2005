@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,7 +42,8 @@ jobs:
           git add Assets/activity-telemetry-full.svg
           if ! git diff --staged --quiet; then
             git commit -m "chore(telemetry): auto-sync activity & profile signal stats [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin main
           else
             echo "Activity telemetry SVG is already up to date."
           fi
